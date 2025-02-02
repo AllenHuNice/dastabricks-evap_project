@@ -1,5 +1,25 @@
 # dastabricks-evap_project
-Data Engineer Interview Task At Fonterra
+Data Engineer Interview Task For Fonterra
+
+### File Descriptions
+
+1. **Generate Mock Data**  
+   - **Purpose**: Generates mock data in the specified format.
+   - **Date Specification**: Allows specifying the date; defaults to the day before the current date.
+   - **Time Range**: Data is generated between 9 AM and 5 PM.
+   - **Storage Location**: Saves data in the `dev.bronze.files` folder within the `Volume` catalog.
+   - **File Naming**: Files are saved as `YYYY-MM-DD.csv`.
+
+2. **Task_1 & Task_3 Solution**  
+   - **Purpose**: Handles Task 1 and Task 3.
+   - **Date Specification**: Allows specifying the date; defaults to the day before the current date.
+   - **Task 1**: Converts data to a wide format for Task 2 analysis.
+   - **Task 3**: Links current data with the previous day's data by identifying the last few records after a state change and appending them to the current dataset.
+
+3. **Task_2 Solution**  
+   - **Purpose**: Implements Task 2.
+   - **Method**: Calculates various statistics and stores them in a Gold layer table.
+   - **Table Properties**: The table supports data appending, ensuring that daily workflow runs automatically add new data to the Gold layer table.
 
 ## Problem Statement
 
